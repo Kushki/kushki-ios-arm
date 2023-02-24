@@ -1,0 +1,16 @@
+PODS:
+  - kushki-ios-arm (0.1.0)
+
+DEPENDENCIES:
+  - kushki-ios-arm (from `../`)
+
+EXTERNAL SOURCES:
+  kushki-ios-arm:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  kushki-ios-arm: d4621cb133480c0fb91e17b6ff860571dd3ac100
+
+PODFILE CHECKSUM: 9ce6507d760b8064c3a24a2259aa25364dc4cfc8
+
+COCOAPODS: 1.11.3

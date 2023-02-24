@@ -1,0 +1,22 @@
+{
+  "name": "kushki-ios-arm",
+  "version": "0.1.0",
+  "summary": "A short description of kushki-ios-arm.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Shavis0n/kushki-ios-arm",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Shavis0n": "javier@kushkipagos.com"
+  },
+  "source": {
+    "git": "https://github.com/Shavis0n/kushki-ios-arm.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "kushki-ios-arm/Classes/**/*"
+}

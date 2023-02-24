@@ -1,22 +1,39 @@
 {
   "name": "kushki-ios-arm",
-  "version": "0.1.0",
-  "summary": "A short description of kushki-ios-arm.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Shavis0n/kushki-ios-arm",
+  "version": "2.4.3",
+  "summary": "Kushki iOS library.",
+  "description": "iOS library to integrate with Kushki for arm.",
+  "homepage": "https://github.com/Kushki/kushki-ios-arm",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Shavis0n": "javier@kushkipagos.com"
+    "Kushki": "javier@kushkipagos.com"
   },
   "source": {
-    "git": "https://github.com/Shavis0n/kushki-ios-arm.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Kushki/kushki-ios-arm.git",
+    "tag": "v2.4.3"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "14.3"
   },
-  "source_files": "kushki-ios-arm/Classes/**/*"
+  "source_files": "kushki-ios-arm/Classes/**/*",
+  "resources": "kushki-ios-arm/Assets/**/*",
+  "dependencies": {
+    "Sift": [
+
+    ]
+  },
+  "ios": {
+    "vendored_frameworks": "kushki-ios-arm/Frameworks/CardinalMobile.framework"
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

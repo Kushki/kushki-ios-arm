@@ -1,16 +1,42 @@
 PODS:
-  - kushki-ios-arm (0.1.0)
+  - kushki-ios-arm (2.4.3):
+    - Sift
+  - OHHTTPStubs (9.1.0):
+    - OHHTTPStubs/Default (= 9.1.0)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - OHHTTPStubs/Swift (9.1.0):
+    - OHHTTPStubs/Default
+  - Sift (2.1.1)
 
 DEPENDENCIES:
   - kushki-ios-arm (from `../`)
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+
+SPEC REPOS:
+  trunk:
+    - OHHTTPStubs
+    - Sift
 
 EXTERNAL SOURCES:
   kushki-ios-arm:
     :path: "../"
 
 SPEC CHECKSUMS:
-  kushki-ios-arm: d4621cb133480c0fb91e17b6ff860571dd3ac100
+  kushki-ios-arm: 48399b131ce6e6e12d2f6bd7281c40628597e73c
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  Sift: 8cd26419e0a9b0d94bd733b296353b68c44192aa
 
-PODFILE CHECKSUM: 9ce6507d760b8064c3a24a2259aa25364dc4cfc8
+PODFILE CHECKSUM: 9ab3462e26b0bb66e423e1f396e53341d63846e5
 
 COCOAPODS: 1.11.3

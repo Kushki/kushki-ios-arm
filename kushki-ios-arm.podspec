@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'kushki-ios-arm'
-  s.version          = '2.4.3'
+  s.version          = '2.5.0-m1'
   s.summary          = 'Kushki iOS library.'
   s.description      = 'iOS library to integrate with Kushki for arm.'
   s.homepage         = 'https://github.com/Kushki/kushki-ios-arm'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Kushki' => 'javier@kushkipagos.com' }
+  s.author           = { 'Kushki' => 'devops@kushkipagos.com' }
   s.source           = { :git => 'https://github.com/Kushki/kushki-ios-arm.git', :tag => "v#{s.version.to_s}" }
   s.ios.deployment_target = '14.3'
   s.source_files     = 'kushki-ios-arm/Classes/**/*'

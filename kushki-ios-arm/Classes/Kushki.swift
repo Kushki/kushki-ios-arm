@@ -1,5 +1,7 @@
 import Foundation
 import Sift
+import UIKit
+import SwiftUI
 
 public class Kushki {
     
@@ -120,4 +122,20 @@ public class Kushki {
         let requestMessage = kushkiClient.buildParameters(withSecureServiceId: secureServiceId, withOtpValue: otpValue)
         self.kushkiClient.post(withMerchantId: publicMerchantId, endpoint: EndPoint.transferSubscriptionSecureValidation.rawValue, requestMessage: requestMessage, withCompletion: completion)
     }
+    
+    public func initVisaBrandingAnimation(uiViewController: UIViewController, completion: @escaping (Bool, Error?) -> Void) {
+        
+        let frameworkBundleID  = "org.cocoapods.Kushki";
+        let bundle = Bundle(identifier: frameworkBundleID)
+        let sensoryVisa = SensoryBrandingVisaController(nibName: "SensoryBrandingVisaController", bundle: bundle)
+        
+        sensoryVisa.executeAnimationVisa(uiViewController: uiViewController){
+            result, err in
+            
+            DispatchQueue.main.async {
+                completion(result, err)
+            }
+        }
+    }
+    
 }

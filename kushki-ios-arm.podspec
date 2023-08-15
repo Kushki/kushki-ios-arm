@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files     = 'kushki-ios-arm/Classes/**/*'
   s.resources        = "kushki-ios-arm/Assets/**/*"
   s.dependency "Sift"
-  s.ios.vendored_frameworks = 'kushki-ios-arm/Frameworks/CardinalMobile.framework'
+  s.ios.vendored_frameworks = 'kushki-ios-arm/Frameworks/CardinalMobile.framework','kushki-ios-arm/Frameworks/VisaSensoryBranding.framework'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
